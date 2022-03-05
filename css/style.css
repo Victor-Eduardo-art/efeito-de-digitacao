@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+body {
+   padding: 10px 20px;
+   background-color: #ccc;
+}
+
+.colorRed {
+   color: #F00;
+}
