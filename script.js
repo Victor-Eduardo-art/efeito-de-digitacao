@@ -9,7 +9,7 @@ function gerenciarTexto () {
    // a função efeitoDit recebe: texto, delay, classe, elementoPai, tmpExec
    const aside = document.querySelectorAll("aside")[0]
 
-   efeitoDit("teste", 100, null, aside, 1)
+   calcTmp("teste", 100, null, aside, 1)
    calcTmp("ola mundo", 100, "colorRed", aside, 1000)
    calcTmp("Hello World", 500, null, aside, 1)
 }
@@ -44,7 +44,6 @@ function efeitoDit (texto, delay, classe, ElementoPai, tmpExec) {
 
 function calcTmp (texto, delay, classe, ElementoPai, tmpExec) {
    const tmp = setInterval(() => {
-      console.log(chave)
       if (chave === false) {
          efeitoDit(texto, delay, classe, ElementoPai, tmpExec)
          clearInterval(tmp)
